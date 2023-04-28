@@ -20,7 +20,7 @@ from pprint import pprint #для печати объекта типа
 import re # регулярные выражения
 
 
-pattern = r'<code>(.*?)</code>'
+pattern = r'<code>(.*?)</code>'    #  pattern = '<code>(\w+)<\/code>' можно так
 url = 'https://stepik.org/media/attachments/lesson/209719/2.html'
 html = urlopen(url).read().decode('utf-8')
 data = str(html)
