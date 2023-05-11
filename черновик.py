@@ -17,10 +17,8 @@ for rownum in range(1, 8):
 for colnum in range(1, 8):
     dict_j[sh.col_values(colnum)[0]] = sh.col_values(colnum)[1:]
 
-print(dict_j)
-
 for region, salaries in dict_s.items():
     dict_s[region] = sorted(salaries)[3]
     print(region, dict_s[region])
 
-
+print(max(dict_s, key=dict_s.get))
