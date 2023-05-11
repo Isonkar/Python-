@@ -14,8 +14,8 @@ dict_j = {}
 for rownum in range(1, 8):
     dict_s[sh.row_values(rownum)[0]] = sh.row_values(rownum)[1:]
 
-for colnum in range(2, 9):
-    dict_j[sh.col_values(2)[colnum]] = sh.col_values(colnum)[1:]
+for colnum in range(1, 8):
+    dict_j[sh.col_values(colnum)[0]] = sh.col_values(colnum)[1:]
 
 print(dict_j)
 
